@@ -1,0 +1,149 @@
+body
+	background #000
+
+header
+	.container
+		position relative
+		z-index 100
+
+	ul
+		list-style none
+		padding 0px
+
+	nav#mainMenu
+		background #282828
+		border-left 15px solid #fcaf01
+		height 71px
+		width 100%
+
+		ul
+			position absolute
+			right 17px
+			li
+				display inline-block
+				vertical-align top
+
+			#btnHome
+				background url("../images/homeBtn.png")
+				display block
+				height 71px
+				width 107px
+				&:hover
+					background url("../images/homeBtn.png") bottom
+
+			#btnContact
+				background #fcaf01
+				color #000
+				display block
+				font-size 22px
+				padding-bottom 10px
+				padding-top 30px
+				text-align center
+				width 290px
+		
+	#logo
+		position absolute
+		left 30px
+		top 0px
+		z-index 100
+
+	#networks
+		background rgba(0, 0, 0, .25)
+		height 79px
+		padding-top 20px
+		position relative
+		text-align right
+		z-index 99
+
+		li
+			display inline-block
+
+			a
+				display block
+				height 36px
+				width 37px
+
+			#btnFacebook
+				background url("../images/btnFace.png")
+
+			#btnTwitter
+				background url("../images/btntwitter.png")
+
+			#btnInstagram
+				background url("../images/btnInsta.png")
+
+			#btnYoutube
+				background url("../images/btnYouTo.png")
+
+
+#slider
+	position absolute
+	top -79px;
+	width 100%
+	
+	ul
+		padding 0
+		
+		li
+			img
+				width 100%
+
+#contentHome
+	position relative
+	min-height 700px;
+
+.container
+	position relative
+	#secondaryMenu
+		nav
+			min-height 131px
+			position absolute
+			bottom 10px
+
+			ul
+				margin-left 35px
+				li
+					color #e7b000
+					font-size 26px
+
+					a
+						color #fff
+
+		#secondaryOne, #secondaryThree 
+			background rgba(234, 173, 19, 0.1)
+
+		#secondaryTwo
+			background rgba(234, 173, 19, 0.4)
+			left 34.70%
+			width 32%
+
+		#secondaryThree
+			left 66.66666666%
+		
+footer
+	#elevenYears
+		p
+			color #fff
+			padding-bottom 15px
+			padding-top 15px
+			text-align center
+	#moreInfo
+		background #1e1e1e
+		padding-bottom 70px
+		position relative
+
+		ul
+			color #fff
+			list-style none
+			li
+				background url("../images/flecha.png") no-repeat
+				font-size 18px
+				padding-left 30px
+		#yuxta
+			background url("../images/yuxtaBtn.png")
+			bottom 15px
+			display block
+			height 52px
+			position absolute
+			right 15px
+			width 107px
