@@ -5,21 +5,23 @@
 		<title>Sosa</title>
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/css/global.css">
+		<script src="assets/js/jquery/jquery.js"></script>
+		<script src="assets/js/moveItems.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="container">
+				
 				<nav id="mainMenu">
 					<ul>
 						<li><a id="btnHome" href="/"></a></li>
 						<li><a id="btnContact" href="/contact">Contacto</a></li>
 					</ul>
 				</nav>
-				<img class="col-md-6" src="assets/images/distintivoHorizontal.png" alt="" id="logo">
-			</div>
-			<div id="networks">
-				<div class="container">
-					<nav>
+				<div id="headerInformation" class="col-md-4">
+					<img src="assets/images/distintivoVertical.png" alt="" id="logo"><br>
+					<img src="assets/images/cuadrodatoshomeLogo.png" alt="" id="info">
+					<nav id="networksList">
 						<ul>
 							<li><a id="btnFacebook" href="#"></a></li>
 							<li><a id="btnTwitter" href="#"></a></li>
@@ -29,11 +31,10 @@
 					</nav>
 				</div>
 			</div>
+			
 		</header>
 		<section id="contentHome">
 			<div id="slider">
-				
-
 				<div class="container">
 					<ul>
 						<li><img src="assets/images/slideAHome.jpg" alt=""></li>
