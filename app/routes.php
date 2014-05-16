@@ -15,3 +15,21 @@ Route::get('/', function()
 {
 	return View::make('layout');
 });
+
+//Rutas de administrador
+Route::group(array('before'=>"auth"), function(){
+	//Inicio
+	Route::get('admin', 'adminController@index');
+
+	//Configuraciones
+	Route::resource('admin/configuraciones', 'Configurations');
+
+	//Paginas
+	Route::resource('admin/paginas', 'Pages');
+});
+
+//Ingresar
+Route::get('login', 'adminController@loginForm');
+
+//Login
+Route::post('login', 'adminController@login');
