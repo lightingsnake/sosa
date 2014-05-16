@@ -20,6 +20,7 @@
 						<li>{{link_to('/', 'Volver a la Web')}}</li>
 						<li>{{link_to('admin/paginas', 'Páginas Internas')}}</li>
 						<li>{{link_to('admin/configuraciones', 'Configuraciones')}}</li>
+						<li>{{link_to('logout', 'Salir')}}</li>
 					</ul>
 				</div>
 			</nav>

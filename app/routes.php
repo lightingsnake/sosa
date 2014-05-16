@@ -26,6 +26,9 @@ Route::group(array('before'=>"auth"), function(){
 
 	//Paginas
 	Route::resource('admin/paginas', 'Pages');
+
+	//Cerrar sesión
+	Route::get('logout', 'adminController@logout');
 });
 
 //Ingresar

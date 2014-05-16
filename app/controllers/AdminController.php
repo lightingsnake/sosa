@@ -28,4 +28,11 @@ class AdminController extends \BaseController {
 						->withInput();
 		endif;
 	}
+
+	//Función de logout
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::to('login');
+	}
 }
