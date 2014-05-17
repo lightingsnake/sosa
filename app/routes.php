@@ -22,14 +22,20 @@ Route::group(array('before'=>"auth"), function(){
 	Route::get('admin', 'adminController@index');
 
 	//Configuraciones
-	Route::resource('admin/configuraciones', 'Configurations');
+	//Route::resource('admin/configuraciones', 'Configurations');
+	Route::get('admin/configuraciones', 'configurations@index');
+	Route::get('admin/configuraciones/{id}/edit', 'configurations@edit');
+	Route::patch('admin/configuraciones/{id}/edit', 'configurations@update');
 
 	//Paginas
-	Route::resource('admin/paginas', 'Pages');
+	Route::resource('admin/paginas', 'pages');
+	Route::patch('admin/paginas/{id}/edit', 'pages@update');
 
 	//Cerrar sesión
 	Route::get('logout', 'adminController@logout');
 });
+
+
 
 //Ingresar
 Route::get('login', 'adminController@loginForm');
