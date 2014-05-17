@@ -110,10 +110,12 @@ body
 
 header 
 	nav
+		background linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.3))
 		position fixed
 		top 0px
 		width 100%
-		
+		z-index 300
+
 		ul
 			margin-bottom 0px
 			text-align right
@@ -137,21 +139,90 @@ header
 
 #contentAdmin
 	background #000
+	background-image url("../images/admin/loginBack.png")
+	background-position right
+	background-repeat repeat-y
 	border-radius 15px
 	box-shadow 0 0 15px rgba(255, 255, 255, .5) !important
+	margin-bottom 20px
 	margin-top 70px
 	min-height 300px
 	padding 20px 40px
 
-	h1
+	h1, h2, h3
 		color #fff
 		font-family 'Oswald', sans-serif
 		font-weight 200
 		margin auto
 		text-align right
 
+	h2, h3
+		text-align left
+
 	table
 		color #fff
 
 		td
 			vertical-align middle
+
+	input[type=file]
+		background #000
+		border none
+		color #ccc
+		opacity 0
+		position absolute
+		top 0px
+		z-index 300
+
+	input[type=text], textarea
+		background linear-gradient(#1f2124, #27292c)
+		color #fff
+		&:focus, &:hover
+			box-shadow 0 0 25px rgba(0, 166, 255, 1) !important
+	
+	textarea
+		resize vertical
+
+	span
+		background linear-gradient(#009dff, #0078c2)
+		color #fff
+
+.btn-info
+	background linear-gradient(#009dff, #0078c2)
+	border-color #fff
+	&:hover
+		background linear-gradient(#007ecc, #005e99)
+		border-color #ccc
+		box-shadow 0 0 25px rgba(0, 166, 255, 1) !important
+
+.fileFake
+	position relative
+	input[type=text]
+		color #ccc !important
+		cursor pointer
+
+	input[type=text].hover
+		border-color #ccc !important
+		color #fff !important
+		box-shadow 0 0 25px rgba(0, 166, 255, 1) !important
+
+	button.form-control
+		background linear-gradient(#009dff, #0078c2)
+		color #fff
+		position absolute
+		right 0px
+		top 0px
+		width 220px
+	button.hover
+			background linear-gradient(#007ecc, #005e99)
+			box-shadow 0 0 25px rgba(0, 166, 255, 1) !important
+
+.fileForm
+	position relative
+
+table
+	tr
+		td
+			img
+				height 300px
+				width 300px

@@ -4,10 +4,10 @@
 
 	"default": {
 
-		"host": "ftp.territoriovirtual.com",
-		"username": "infinityteam",  // or null for anonymous login
-		"password": "Rising7!",
-		"path": "/clientes/sosa/",
+		"host": "ftp.sosaproducciones.com",
+		"username": "sosa@sosaproducciones.com",  // or null for anonymous login
+		"password": "Sosa2014",
+		"path": "/sosa/",
 
 		"upload_on_save": true // set *false* if you do not want to upload on save!
 

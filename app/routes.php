@@ -31,6 +31,9 @@ Route::group(array('before'=>"auth"), function(){
 	Route::resource('admin/paginas', 'pages');
 	Route::patch('admin/paginas/{id}/edit', 'pages@update');
 
+	//Imagenes de las páginas
+	Route::post('admin/image/{id}/store', 'images@store');
+
 	//Cerrar sesión
 	Route::get('logout', 'adminController@logout');
 });
