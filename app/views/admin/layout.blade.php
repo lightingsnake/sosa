@@ -19,6 +19,7 @@
 					<ul>
 						<li>{{link_to('admin', 'Inicio')}}</li>
 						<li>{{link_to('/', 'Volver a la Web')}}</li>
+						<li>{{link_to('admin/banners', 'Banner')}}</li>
 						<li>{{link_to('admin/paginas', 'Páginas Internas')}}</li>
 						<li>{{link_to('admin/configuraciones', 'Configuraciones')}}</li>
 						<li>{{link_to('logout', 'Salir')}}</li>

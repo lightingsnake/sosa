@@ -35,6 +35,12 @@ Route::group(array('before'=>"auth"), function(){
 	Route::post('admin/image/{id}/store', 'images@store');
 	Route::delete('admin/image/{id}/destroy', 'images@destroy');
 
+	//Banners del home
+	Route::get('admin/banners', 'banners@index');
+	Route::post('admin/banners', 'banners@store');
+	Route::delete('admin/banners/{id}/destroy', 'banners@destroy');
+
+
 	//Cerrar sesión
 	Route::get('logout', 'adminController@logout');
 });
