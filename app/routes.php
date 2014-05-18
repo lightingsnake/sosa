@@ -33,6 +33,7 @@ Route::group(array('before'=>"auth"), function(){
 
 	//Imagenes de las páginas
 	Route::post('admin/image/{id}/store', 'images@store');
+	Route::delete('admin/image/{id}/destroy', 'images@destroy');
 
 	//Cerrar sesión
 	Route::get('logout', 'adminController@logout');

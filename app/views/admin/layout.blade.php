@@ -9,6 +9,7 @@
 		{{HTML::style('assets/css/admin.css')}}
 		{{HTML::script('assets/js/jquery/jquery.js')}}
 		{{HTML::script('assets/bootstrap/js/bootstrap.js')}}
+		{{HTML::script('assets/js/admin.js')}}
 		
 	</head>
 	<body>
